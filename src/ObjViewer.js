@@ -44,7 +44,9 @@ export default function ObjViewer() {
       <directionalLight position={[10, 10, 5]} intensity={1} />
       <OrbitControls />
       <Suspense fallback={<Loader />}>
-        <ObjModel objPath="/Floorplan_2/testing.obj" mtlPath="/Floorplan_2/testing.mtl" />
+        <ObjModel objPath="/Floorplan_1_text/Floorplan_1_text.obj" mtlPath="/Floorplan_1_text/Floorplan_1_text.mtl" />
+        {/* <ObjModel objPath="/Floorplan_1_withouttext/Floorplan_1_withouttext.obj" mtlPath="/Floorplan_1_withouttext/Floorplan_1_withouttext.mtl" /> */}
+        {/* <ObjModel objPath="/Floorplan_2_withouttext/Floorplan_2_withouttext.obj" mtlPath="/Floorplan_2_withouttext/Floorplan_2_withouttext.mtl" /> */}
       </Suspense>
     </Canvas>
   );
